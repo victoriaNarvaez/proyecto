@@ -1,0 +1,80 @@
+/*Estilos*/
+
+header {
+    background: linear-gradient(to right, rgba(239,197,202,1) 0%, rgba(210,75,90,1) 0%, rgba(241,142,153,1) 100%);
+    color: bisque;
+    text-align: center;
+    font-family: 'Tangerine', Arial;
+    /*font-size: large;*/
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+
+    border-style: double;
+}
+body {
+    text-align: center;
+    background-color: rgb(211, 206, 223);
+    justify-content: center;
+
+    .padre{
+        text-align: center;
+        background: rgb(250, 244, 244);
+        padding: 1px;
+        border-radius: 5px;
+        /*border-style: dashed; estilo de borde: puntos*/
+    }
+    .presentacion{
+        padding: 10px;
+        border-radius: 20px;
+        border-style: dashed;
+        width: 80%;
+        display: inline-block;
+    }
+    .container{
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        grid-template-columns: repeat(auto-fill, minmax(200px, lfr));
+        justify-content: center;
+        font-size: 125%;
+    }
+
+    .archivos{
+        padding: 20px;
+    }
+
+    .imagVid {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    @keyframes moverescal {
+        from {
+            translate: 150vw 0;
+            scale: 200% 1;
+        }
+        
+        to {
+            translate: 0 0;
+            scale: 100% 1;
+        }
+    }
+    .cuadro{
+        background-color: rgb(130, 130, 255);
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        animation: moverescal 4s infinite alternate slidein;
+    }
+}
+
+footer {
+    border-radius: 60px/20px;
+    padding: 5px;
+    text-align: end;
+    background-color: black;
+    color: aliceblue;
+}
